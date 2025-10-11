@@ -103,7 +103,7 @@ function App() {
       </div>
       
    {/* Kontainer Utama dibuat 'relative' sebagai jangkar */}
-<div className='relative flex justify-between items-center pt-10 pb-5' data-aos="fade-up" data-aos-duration = "1000">
+<div className='relative flex justify-between items-center pt-10 pb-15' data-aos="fade-up" data-aos-duration = "1000">
 
   {/* GRUP KIRI: Logo */}
   <div>
