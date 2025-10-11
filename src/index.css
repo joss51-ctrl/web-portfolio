@@ -1,0 +1,18 @@
+@import "tailwindcss";
+
+@layer base{
+    body{
+        font-family: "Poppins", sans-serif;
+    }
+}
+
+@layer components{
+    .navbar1{
+    @apply md:text-lg font-medium;    
+}
+
+    .skills{
+        @apply text-sm font-medium md:text-xl
+    }
+    
+}
