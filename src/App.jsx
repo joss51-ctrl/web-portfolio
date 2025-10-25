@@ -80,24 +80,8 @@ function App() {
 <div id="Projects" className='projects mt-24' data-aos="fade-up" data-aos-duration="1000">
   <h1 className='text-center text-3xl md:text-4xl font-bold mb-2'>Projects</h1>
   <p className='text-base/loose text-center opacity-50'>Let’s take a look at what I’ve built so far</p>
-  
-  {/* CUKUP PANGGIL INI. 
-      ProjectsSection sudah berisi tombol filter DAN grid proyek. */}
   <ProjectsSort />
 
-  {/* HAPUS BAGIAN DI BAWAH INI (dari <div className='projects-box'> sampai </div>) */}
-  {/* <div className='projects-box mt-14 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10'>
-    {listProyek.map((project, index) => (
-      <ProjectCard 
-        key={project.id} 
-        project={project}
-        data-aos="fade-up"
-        data-aos-duration="500"
-        data-aos-delay={index * 100}
-      />
-    ))}
-  </div> 
-  */}
   
 </div>
     {/* {Contact} */}
