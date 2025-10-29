@@ -5,6 +5,7 @@ import "yet-another-react-lightbox/styles.css";
 import Zoom from "yet-another-react-lightbox/plugins/zoom";
 import Thumbnails from "yet-another-react-lightbox/plugins/thumbnails";
 import "yet-another-react-lightbox/plugins/thumbnails.css";
+import { FaGithub  } from "react-icons/fa";
 
 export default function ProjectCard({ project, ...aosProps }) {
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
@@ -82,15 +83,35 @@ export default function ProjectCard({ project, ...aosProps }) {
               <p className='py-1 px-3 text-sm rounded-md font-semibold bg-zinc-700' key={index}>{tool}</p>
             ))}
           </div>
-          <div className='mt-auto pt-8 text-center '>
-            <a href={project.link} 
-               target="_blank" 
-               rel="noopener noreferrer"
-             className='text-sm md:text-base bg-violet-700 p-3 rounded-lg block border border-zinc-600 hover:bg-violet-600 
-             transition-colors'>
-              See Projects
-            </a>
-          </div>
+    <div className='mt-auto pt-8 text-center'>
+      <div className={`flex ${project.linkweb ? 'gap-3' : 'justify-center'}`}>
+
+        <a
+          href={project.link}
+          target="_blank"
+          rel="noopener noreferrer"
+          className={`flex items-center justify-center gap-2 flex-row-reverse
+          text-sm md:text-base bg-gray-700 hover:bg-gray-600 text-white 
+          p-3 rounded-lg border border-zinc-600 transition-colors 
+          ${project.linkweb ? 'flex-1' : 'w-full max-w-[200px]'}`}
+        >
+          <FaGithub className="text-lg" />
+          Github Repo
+        </a>
+
+        {project.linkweb && (
+          <a
+            href={project.linkweb}
+            target="_blank"
+            rel="noopener noreferrer"
+            className='text-sm md:text-base bg-violet-700 p-3 rounded-lg border border-zinc-600 hover:bg-violet-600 transition-colors flex-1'
+          >
+            See Projects
+          </a>
+        )}
+      </div>
+    </div>
+
         </div>
       </div>
 

@@ -24,16 +24,34 @@ import Project4_detail from "/assets/proyek/RM-2.png";
 import Proyek5 from "/assets/proyek/HCI-1.png";
 import Project5_detail from "/assets/proyek/HCI-2.png";
 import Project55_detail from "/assets/proyek/HCI-3.png";
+
 import Proyek6 from "/assets/proyek/crud-1.png";
 import Project6_detail from "/assets/proyek/crud-2.png";
 import Project66_detail from "/assets/proyek/crud-3.png";
 
+import Proyek7 from "/assets/proyek/mern-1.png";
+import Project7_detail from "/assets/proyek/mern-hover.png";
+import Project77_detail from "/assets/proyek/mern-edit.png";
+
 export const listProyek = [
+
+
+  {
+    id: 7,
+    images: [Proyek7, Project7_detail, Project77_detail],
+    nama: "MERN Stack Library",
+    desk: "Built a Library Management System using the MERN stack, Using CRUD operations and RESTful APIs integration.",
+    tools: ["React", "TailwindCSS", "MongoDB", "Node.js", "Express.js"],
+    dad: "100",
+    link:"https://github.com/joss51-ctrl/MERN-Library",
+    linkweb:"https://mern-library-hlxn.onrender.com",
+    category:"WEB"
+  },
   {
     id: 6,
     images: [Proyek6, Project6_detail, Project66_detail],
     nama: "Simple CRUD User Management",
-    desk: "Built a full-stack User Management web application with an interactive dashboard that visualizes gender distribution in real time. Using CRUD operations, RESTful API integration, and data visualization using React, Express.js, and MySQL.",
+    desk: "Built a full-stack User Management web with an interactive dashboard that visualizes gender distribution in real time. Using CRUD operations and RESTful API integration.",
     tools: ["React", "TailwindCSS", "SQL", "Node.js", "Express.js"],
     dad: "100",
     link:"https://github.com/joss51-ctrl/SimpleCRUD",
@@ -79,16 +97,16 @@ export const listProyek = [
     link:"https://github.com/joss51-ctrl/Diabetes_HeartDiseasePrediction",
     category:"ML/AI"
   },
-  {
-    id: 4,
-    images: [Proyek4, Project4_detail],
-    nama: "Kickstarter Funding Success Prediction",
-    desk: "Developed and evaluated machine learning models for predicting Kickstarter funding success, and completed a research paper analyzing feature importance to identify key early-stage factors.",
-    tools: ["Python"],
-    dad: "600",
-    link:"https://drive.google.com/file/d/1C3LM-A-5Qli_6Xhmx8oblAwLsth1ph0d/view?usp=sharing",
-    category:"ML/AI"
-  },
+  // {
+  //   id: 4,
+  //   images: [Proyek4, Project4_detail],
+  //   nama: "Kickstarter Funding Success Prediction",
+  //   desk: "Developed and evaluated machine learning models for predicting Kickstarter funding success, and completed a research paper analyzing feature importance to identify key early-stage factors.",
+  //   tools: ["Python"],
+  //   dad: "600",
+  //   link:"https://drive.google.com/file/d/1C3LM-A-5Qli_6Xhmx8oblAwLsth1ph0d/view?usp=sharing",
+  //   category:"ML/AI"
+  // },
  
 ];
 
