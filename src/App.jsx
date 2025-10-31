@@ -8,7 +8,7 @@ function App() {
   return (
     <>
     {/* Hero Section */}
-     <div id="Home" className="hero grid grid-cols-2 flex items-center">
+     <div id="Home" className="grid grid-cols-2 items-center">
 
       <div className='animate__animated animate__fadeInUp animate__delay-3s'>
         <h1 id="About" className='text-3xl/tight font-bold mb-6 md:text-5xl/tight'>Hello, i am</h1>
@@ -77,39 +77,33 @@ function App() {
     </div>
   
 {/* Project Section */}
-<div id="Projects" className='projects mt-24' data-aos="fade-up" data-aos-duration="1000">
+<div id="Projects" className='mt-24' data-aos="fade-up" data-aos-duration="1000">
   <h1 className='text-center text-3xl md:text-4xl font-bold mb-2'>Projects</h1>
-  <p className='text-base/loose text-center opacity-50'>Let’s take a look at what I’ve built so far</p>
+  <p className='text-base/loose text-center opacity-50'>Let's take a look at what I've built so far</p>
   <ProjectsSort />
 
   
 </div>
     {/* {Contact} */}
-
     <div id='Contact' className='mt-22 flex flex-col text-center gap-3' data-aos="fade-up" data-aos-duration = "1000">
       <h1 className='text-3xl  md:text-4xl font-bold mb-2'>Contact</h1>
       <p className='text-sm md::text-base/loose opacity-50'>+62 813-2687-7455</p>
       <p className=' text-sm md:text-base/loose opacity-50'>yechieljo@gmail.com</p>
       </div>
       
-   {/* Container Relative  */}
 <div className='relative flex justify-between items-center pt-10 pb-15' data-aos="fade-up" data-aos-duration = "1000">
 
-  {/* GRUP KIRI: Logo */}
   <div>
     <p className='font-bold text-2xl bg-white text-black p-1 md:bg-transparent md:text-white'>Portfolio</p>
   </div>
   
-  {/* GRUP TENGAH: Navigasi */}
   <div className='absolute left-1/2 -translate-x-1/2  items-center gap-6 hidden sm:flex'>
     <a href="#Home" className='text-zinc-400 hover:text-white text-lg font-medium'>Home</a>
     <a href="#About" className='text-zinc-400 hover:text-white text-lg font-medium'>About</a>
     <a href="#Projects" className='text-zinc-400 hover:text-white text-lg font-medium'>Projects</a> 
   </div>
   
-  {/* GRUP KANAN: Ikon Sosial Media */}
   <div className='flex items-center gap-6'>
-    {/* Ikon Email */}
     <a 
       href="mailto:yechieljo@gmail.com" 
       className='text-2xl text-zinc-400 hover:text-violet-500 transition-colors duration-300'
@@ -117,19 +111,16 @@ function App() {
       <MdEmail />
     </a>
 
-    {/* Ikon Instagram */} 
     <a href="https://www.instagram.com/yechieljose/" 
     target="_blank" 
     rel="noopener noreferrer" 
     className='text-2xl text-zinc-400 hover:text-violet-500 transition-colors duration-300' > 
     <FaInstagram /> </a>
 
-    {/* Ikon LinkedIn */} 
     <a href="https://www.linkedin.com/in/yechiel-josey-a80aa5363/" target="_blank" rel="noopener noreferrer" 
     className='text-2xl text-zinc-400 hover:text-violet-500 transition-colors duration-300' > 
     <FaLinkedin /> </a>
 
-    {/* Ikon Github */} 
     <a 
       href="https://github.com/joss51-ctrl" 
       target="_blank" 

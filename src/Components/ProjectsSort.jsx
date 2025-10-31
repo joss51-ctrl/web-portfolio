@@ -25,7 +25,7 @@ export default function ProjectsSort() {
               }
             `}
           >
-            {filter === 'ML' ? 'Machine Learning/AI' : filter}
+            {filter}
           </button>
         ))}
       </div>

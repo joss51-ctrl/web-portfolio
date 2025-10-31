@@ -34,8 +34,6 @@ import Project7_detail from "/assets/proyek/mern-hover.png";
 import Project77_detail from "/assets/proyek/mern-edit.png";
 
 export const listProyek = [
-
-
   {
     id: 7,
     images: [Proyek7, Project7_detail, Project77_detail],

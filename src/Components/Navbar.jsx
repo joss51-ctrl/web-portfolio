@@ -1,4 +1,5 @@
 import {useState, useEffect} from "react";
+
 const Navbar = () => {
   const [active, setActive] = useState(false);
 
@@ -24,7 +25,7 @@ const Navbar = () => {
     <p className='font-bold text-2xl bg-white text-black p-1 md:bg-transparent md:text-white'>Portfolio</p>
     </div>
 
-    <ul className={`navbar1 menu flex items-center gap-4 z-10 md:static fixed left-1/2 -translate-x-1/2
+    <ul className={`navbar1 flex items-center gap-4 z-10 md:static fixed left-1/2 -translate-x-1/2
       md:-translate-x-0 md:opacity-100 bg-white/30 backdrop:blur-md p-4 rounded-br-2xl rounded-bl-2xl 
       md:bg-transparent transition-all md:transition-none
       ${active ?"top-0 opacity-100": "-top-10 opacity-0"  }`}>  
