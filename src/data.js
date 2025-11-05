@@ -47,7 +47,7 @@ export const listProyek = [
     tools: ["React", "TailwindCSS"],
     dad: "100",
     link:"https://github.com/joss51-ctrl/Cinemaplex",
-    linkweb:"https://cinemaplex-2ek2mc8u9-joseys-projects-d921b50e.vercel.app/",
+    linkweb:"https://cinemaplex.vercel.app/",
     category:"WEB"
   },
   
